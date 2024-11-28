@@ -27,6 +27,10 @@ namespace BMICalculator
             }
             else if (bmi < 30)
             {
+                category = "Overweight";
+            }
+            else
+            {
                 category = "Obesity";
             }
 
