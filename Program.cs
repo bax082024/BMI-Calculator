@@ -8,6 +8,10 @@ namespace BMICalculator
         {
 
             Console.WriteLine("Welcome to the BMI Calculator!");
+
+            // Get weight
+            Console.WriteLine("Enter weight in kg: ");
+            double weight = Convert.ToDouble(Console.ReadLine());   
         }
     }
 }
