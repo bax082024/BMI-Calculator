@@ -1,3 +1,14 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
-Console.WriteLine("kajsfjksegf");
+﻿using System;
+
+namespace BMICalculator
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            Console.WriteLine("Welcome to the BMI Calculator!");
+        }
+    }
+}
+
