@@ -19,6 +19,9 @@ namespace BMICalculator
 
             // Calculate BMI 
             double bmi = weight / (height * height);
+
+            // Display result
+            Console.WriteLine("Your BMI is: {bmi:F2}");
         }
 
     }
