@@ -10,7 +10,9 @@ namespace BMICalculator
             Console.WriteLine("Welcome to the BMI Calculator!");
 
             double weight = GetValidInput("Enter weight in kilogram: ");
-            double height = GetValidInput("Enter height in meters: ");
+            Console.WriteLine("Enter your height in centimeters: ");
+            double heightInCm = Convert.ToDouble(Console.ReadLine());
+            double height = heightInCm / 100;
 
             // Calculate BMI 
             double bmi = weight / (height * height);
