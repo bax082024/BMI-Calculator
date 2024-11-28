@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 
 namespace BMICalculator
 {
@@ -29,6 +30,7 @@ namespace BMICalculator
             if (bmi < 18.5)
             {
                 category = "Underweight";
+                
             }
             else if (bmi < 25)
             {
@@ -48,6 +50,10 @@ namespace BMICalculator
             Console.WriteLine($"Your BMI is {bmi:F2}. You are classified as: {category}");
 
 
+            // Save results to file 
+            string result = $"Weight: {weight} kg, Height: {height:F2} m, BMI: {bmi:F2}, Category: {category}";
+            File.AppendAllText("BMI_Results.txt", result + Environment.NewLine);
+            Console.WriteLine("Your results have been saved to BMI_Results.txt.");
         }
 
         static double GetValidInput(string prompt)
