@@ -9,6 +9,13 @@ namespace BMICalculator
 
             Console.WriteLine("Welcome to the BMI Calculator!");
 
+            Console.WriteLine("BMI Categories:");
+            Console.WriteLine("Underweight: less than 18.5");
+            Console.WriteLine("Normal weight: 18.5 to 24.9");
+            Console.WriteLine("Overweight: 25 to 29.9");
+            Console.WriteLine("Obesity: 30 or more");
+            Console.WriteLine();
+
             double weight = GetValidInput("Enter weight in kilogram: ");
             Console.WriteLine("Enter your height in centimeters: ");
             double heightInCm = Convert.ToDouble(Console.ReadLine());
