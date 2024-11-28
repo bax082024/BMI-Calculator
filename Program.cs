@@ -9,8 +9,8 @@ namespace BMICalculator
 
             Console.WriteLine("Welcome to the BMI Calculator!");
 
-            double weight = GetValidInput("Enter weight in kilogram");
-            double height = GetValidInput("Enter height in meters");
+            double weight = GetValidInput("Enter weight in kilogram: ");
+            double height = GetValidInput("Enter height in meters: ");
 
             // Calculate BMI 
             double bmi = weight / (height * height);
@@ -36,8 +36,9 @@ namespace BMICalculator
 
 
             // Display result
-            Console.WriteLine("Your BMI is: {bmi:F2}. You are classified as: {category} ");
-            
+            Console.WriteLine($"Your BMI is {bmi:F2}. You are classified as: {category}");
+
+
         }
 
         static double GetValidInput(string prompt)
