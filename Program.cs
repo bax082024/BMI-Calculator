@@ -20,8 +20,25 @@ namespace BMICalculator
             // Calculate BMI 
             double bmi = weight / (height * height);
 
+            // BMI Category
+            string category;
+            if (bmi < 18.5)
+            {
+                category = "Underweight";
+            }
+            else if (bmi < 25)
+            {
+                category = "Normal weight";
+            }
+            else if (bmi < 30)
+            {
+                category = "Obesity";
+            }
+
+
             // Display result
-            Console.WriteLine("Your BMI is: {bmi:F2}");
+            Console.WriteLine("Your BMI is: {bmi:F2}. You are classified as: {category} ");
+            
         }
 
     }
