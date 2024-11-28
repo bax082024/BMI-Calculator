@@ -17,6 +17,7 @@ namespace BMICalculator
             Console.WriteLine("Obesity: 30 or more");
             Console.WriteLine();
 
+            // Get weight and height
             double weight = GetValidInput("Enter weight in kilogram: ");
             Console.WriteLine("Enter your height in centimeters: ");
             double heightInCm = Convert.ToDouble(Console.ReadLine());
