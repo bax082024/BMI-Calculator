@@ -16,6 +16,9 @@ namespace BMICalculator
             // Get height
             Console.WriteLine("Enter Height in meters: ");
             double height = Convert.ToDouble(Console.ReadLine());
+
+            // Calculate BMI 
+            double bmi = weight / (height * height);
         }
 
     }
